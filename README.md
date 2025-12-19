@@ -1,6 +1,6 @@
-# 🧠 Credit Card Fraud Detection — End-to-End Machine Learning Project
+#  Credit Card Fraud Detection — End-to-End Machine Learning Project
 
-## 📌 Project Overview
+##  Project Overview
 This project focuses on detecting fraudulent credit card transactions using machine learning.  
 Due to the highly imbalanced nature of fraud data, the primary objective is to minimize false negatives (FN) and maximize recall for fraudulent transactions rather than relying on accuracy alone.
 
@@ -21,7 +21,7 @@ The dataset is extremely imbalanced, reflecting real-world fraud detection scena
 
 ---
 
-## 🔄 Machine Learning Workflow
+##  Machine Learning Workflow
 1. Exploratory Data Analysis (EDA)
 2. Understanding and handling class imbalance
 3. Model training and comparison
@@ -32,7 +32,7 @@ The dataset is extremely imbalanced, reflecting real-world fraud detection scena
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 - Analyzed class distribution (fraud vs legitimate)
 - Studied feature correlations
 - Performed time-based transaction analysis
@@ -69,7 +69,7 @@ Accuracy was not used as the primary decision metric.
 
 ---
 
-## ✅ Final Model Selection
+##  Final Model Selection
 Logistic Regression was selected as the final model because:
 - It achieved the lowest number of false negatives
 - It provided the highest recall for fraudulent transactions
@@ -79,10 +79,12 @@ Although Decision Tree and Random Forest showed good performance, they missed mo
 
 ---
 
-## 🚀 Deployment
+##  Deployment
+
 The final model was deployed using a Flask web application.
 
 ### API Details
+
 - Endpoint: /predict
 - Method: POST
 - Input: Transaction feature values in JSON format
@@ -91,6 +93,8 @@ The final model was deployed using a Flask web application.
   - 1 → Fraudulent transaction
 
 The trained model was saved as model.pkl and loaded into the Flask application for real-time predictions.
+
+
 🗂️ Project Structure
 <pre>
 Credit_Card_Fraud_Detection/
@@ -107,7 +111,7 @@ Credit_Card_Fraud_Detection/
 </pre>
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - Python
 - Pandas, NumPy
 - Scikit-learn
@@ -117,7 +121,7 @@ Credit_Card_Fraud_Detection/
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 - Handling highly imbalanced datasets
 - Selecting evaluation metrics aligned with business goals
 - Comparing models using recall and false negatives
@@ -126,7 +130,7 @@ Credit_Card_Fraud_Detection/
 
 ---
 
-## 🎯 Conclusion
+##  Conclusion
 This project demonstrates a complete, real-world machine learning pipeline for credit card fraud detection.  
 By prioritizing recall and minimizing false negatives, the solution aligns technical decisions with real business impact and is suitable for practical deployment scenarios.
 
